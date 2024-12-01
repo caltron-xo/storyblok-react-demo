@@ -1,6 +1,8 @@
 # Gen Z Slang Decoder
 
 This project displays a list of popular Gen Z slang terms and their meanings. The content is managed and fetched via Storyblok, a powerful headless CMS, enabling easy content updates without needing to modify the underlying code. The app is statically rendered for efficient performance and easy browsing. React and CSS are used to build the app with a decent and modern look.
+![{E48A2DFC-E5DE-4DDB-AE59-330888C159FD}](https://github.com/user-attachments/assets/a7cb4799-69c5-43d3-9ef5-155885c7fb22)
+
 
 ## What is Storyblok?
 
