@@ -44,9 +44,3 @@ The slang words and their meanings are managed through Storyblok. The content is
 - **Dynamic Fetching**: The React app fetches the data dynamically using the Storyblok API and displays the content as a static list.
 - **Seamless Updates**: Since the content is decoupled from the code, editors can update the slang terms and their meanings anytime without requiring code changes or redeployments.
 
-## Learn More
-
-To learn more about Create React App, visit the official documentation.  
-To learn more about Storyblok, check out their documentation.  
-You can sign up for a free Storyblok account to start managing your content at Storyblok.
-
