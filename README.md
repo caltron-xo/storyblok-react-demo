@@ -1,6 +1,31 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Gen Z Slang Decoder
+
+This project displays a list of popular Gen Z slang terms and their meanings. The content is managed and fetched via **Storyblok**, a powerful headless CMS, enabling easy content updates without needing to modify the underlying code. The app is statically rendered for efficient performance and easy browsing.
+
+## What is Storyblok?
+
+**Storyblok** is a headless Content Management System (CMS) that provides a flexible and scalable approach to content management. Unlike traditional CMS platforms, Storyblok allows you to manage content separately from the front-end code, making it easy to update and publish content without involving developers.
+
+In this project, **Storyblok** is used to manage the list of Gen Z slang words and their definitions. This allows the content to be updated dynamically in the Storyblok interface, while the front-end code remains static and optimized.
+
+### Benefits of Using Storyblok:
+- **Content Management**: Editors and content creators can easily add, update, or remove terms and definitions without touching the code.
+- **Preview Feature**: Real-time previews allow you to see how content updates will appear on the site before publishing them.
+- **Headless Architecture**: Separates the content from the presentation layer, enabling flexible delivery across different platforms (web, mobile, etc.).
+- **User-Friendly Interface**: Storyblok provides an intuitive drag-and-drop interface that makes it easy for anyone to manage content.
+
+## Getting Started
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and integrates **Storyblok** for managing the content. The content (slang terms and their meanings) is fetched from **Storyblok** via its API and displayed on the front-end.
+
+### Prerequisites
+Make sure you have **Node.js** and **npm** installed on your machine. You can download them from the official website.
+
+### Install Dependencies
+Run the following command to install all required dependencies:
+
+npm install
 
 ## Available Scripts
 
@@ -8,63 +33,12 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Runs the app in development mode.Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Static Content with Storyblok
 
-### `npm test`
+The slang words and their meanings are managed through **Storyblok**. The content is fetched from the **Storyblok API** and rendered as static content on the front-end. This separation of content management and presentation ensures that the app's structure remains intact while allowing for easy content updates by non-developers.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Storyblok Interface**: Content editors can log in to **Storyblok** to add, edit, or remove slang terms.
+- **Dynamic Fetching**: The React app fetches the data dynamically using the **Storyblok API** and displays the content as a static list.
+- **Seamless Updates**: Since the content is decoupled from the code, editors can update the slang terms and their meanings anytime without requiring code changes or redeployments.
