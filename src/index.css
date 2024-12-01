@@ -1,13 +1,86 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Basic Reset for body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Basic sans-serif font */
+  background-color: #000000; /* Black background for the page */
+  color: #fe9400; /* Gold text color for all body text */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 100vh; /* Full viewport height */
+  flex-direction: column; /* Stack the items vertically */
+}
+
+/* Grid Container as a Column */
+.grid-container {
+  display: flex;
+  flex-direction: column; /* Stack items in a column */
+  align-items: center; /* Center items horizontally */
+  gap: 1rem; /* Space between each item */
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px; /* Limit the width of the grid */
+  margin: 0 auto; /* Center grid horizontally */
+}
+
+/* Styling for Grid Items (Words) */
+.grid-container > * {
+  text-align: center;
+  color: #fe9400; /* Gold font color */
+  font-size: 1rem;
+  padding: 1rem;
+  cursor: pointer; /* Change cursor on hover */
+  transition: color 0.3s, transform 0.3s ease;
+}
+
+/* Hover Effect */
+.grid-container > *:hover {
+  transform: scale(1.05); /* Slightly scale up the text */
+  cursor: pointer; /* Ensure the pointer cursor on hover */
+}
+
+/* Teaser Styling */
+.teaser {
+  font-size: 3rem;
+  color: #fe9400; /* Gold font color */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .teaser {
+    font-size: 1.5rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Default multi-column layout for larger screens */
+  }
 }
